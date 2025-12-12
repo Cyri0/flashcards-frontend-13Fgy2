@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 import FlashCard from "./FlashCard"
 
 export type FlashCardType = {
@@ -6,6 +6,8 @@ export type FlashCardType = {
   answer: string,
   points: number
 }
+
+export const NextContext = createContext<{nextQuestion:()=>void}>({nextQuestion: ()=>{}})
 
 function App() {
   const [cards, setCards] = useState<FlashCardType[]>([])
@@ -18,9 +20,9 @@ function App() {
   },[])
   
   return (
-    <>
+    <NextContext.Provider value={{nextQuestion: ()=>setCardIndex(prev => prev + 1)}}>
       {cards.length > 0 && <FlashCard {...cards[cardIndex]} />}
-    </>
+    </NextContext.Provider>
   )
 }
 

@@ -29,7 +29,6 @@ body, #root{
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
 
@@ -52,6 +51,11 @@ body, #root{
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .flip-card-front {
@@ -60,7 +64,41 @@ body, #root{
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  justify-content: space-between;
   transform: rotateY(180deg);
+
+  div:nth-child(1){
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  padding: 20px;
+
+  h2{
+    font-size: 1.3rem;
+  }
+  overflow: hidden;
+}
+
+.buttonWrapper{
+  display: flex;
+  gap: 20px;
+
+  button{
+    font-size: 2rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    color: white;
+  }
+
+  button:nth-child(1){ background: var(--green); }
+  button:nth-child(2){ background: var(--red); }
 }
