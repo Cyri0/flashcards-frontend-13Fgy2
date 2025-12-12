@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react"
 import FlashCard from "./FlashCard"
+import ProgressBar from "./ProgressBar"
 
 export type FlashCardType = {
   question: string,
@@ -20,9 +21,13 @@ function App() {
   },[])
   
   return (
+    <>
     <NextContext.Provider value={{nextQuestion: ()=>setCardIndex(prev => prev + 1)}}>
-      {cards.length > 0 && <FlashCard {...cards[cardIndex]} />}
+      {cards.length > 0 && cardIndex < cards.length && <FlashCard {...cards[cardIndex]} />}
     </NextContext.Provider>
+
+    <ProgressBar current={cardIndex+1} max={cards.length} />
+    </>
   )
 }
 

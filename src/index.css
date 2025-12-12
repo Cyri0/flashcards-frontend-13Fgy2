@@ -76,7 +76,7 @@ body, #root{
     top: 0;
   }
 
-  padding: 20px;
+  padding: 30px;
 
   h2{
     font-size: 1.3rem;
@@ -101,4 +101,25 @@ body, #root{
 
   button:nth-child(1){ background: var(--green); }
   button:nth-child(2){ background: var(--red); }
+}
+
+.progressBar{
+  background: white;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  >div{
+    background: var(--green);
+    height: 100%;
+    border-radius: 10px;
+    transition: 1s;
+  }
+}
+h3{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
