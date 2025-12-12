@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Mi a JavaScript?",
+    "answer": "Magas szintű, dinamikus, böngészőben és szerveroldalon futó programozási nyelv.",
+    "points": 3
+  },
+  {
+    "question": "Mi a különbség a var, let és const között?",
+    "answer": "A var függvény-scope, a let és const blokk-scope; a const értéke nem írható felül.",
+    "points": 1
+  },
+  {
+    "question": "Mi az a scope?",
+    "answer": "Az a terület, ahol egy változó elérhető — globális, függvény- vagy blokk-scope.",
+    "points": 2
+  },
+  {
+    "question": "Mi az immutabilitás?",
+    "answer": "Az állapot nem módosítása meglévő objektumon belül.",
+    "points": -1
+  },
+  {
+    "question": "Mi az eseményhurok (event loop)?",
+    "answer": "A JS egyetlen szálú módon kezeli a feladatokat és callbackeket.",
+    "points": 5
+  },
+  {
+    "question": "Mi az a Promise?",
+    "answer": "Egy aszinkron művelet állapotát reprezentáló objektum.",
+    "points": 3
+  },
+  {
+    "question": "Mi a destrukturálás (destructuring)?",
+    "answer": "Objektum vagy tömb elemeinek egyszerű változókba szedése.",
+    "points": 5
+  },
+  {
+    "question": "Mire jók a template literálok?",
+    "answer": "Többsoros string és beágyazott kifejezések használata `${}` szintaxissal.",
+    "points": 1
+  },
+  {
+    "question": "Mi a különbség a == és === között?",
+    "answer": "A == konvertál, a === típus és érték alapján hasonlít.",
+    "points": 3
+  },
+  {
+    "question": "Mi a REST?",
+    "answer": "Webszolgáltatás-architektúra, JS fetch/API hívásokkal éri el.",
+    "points": -2
+  },
+  {
+    "question": "Miért hasznos az immutábilis állapotfrissítés?",
+    "answer": "Kisebb mellékhatás, jobb teljesítmény és egyszerűbb követhetőség.",
+    "points": 0
+  },
+  {
+    "question": "Mi az a NaN és hogyan ellenőrizhető?",
+    "answer": "Not-a-Number érték, Number.isNaN() segítségével ellenőrizhető.",
+    "points": 4
+  }
+]
