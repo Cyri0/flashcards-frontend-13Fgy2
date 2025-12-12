@@ -10,7 +10,7 @@ A kártya színe a kérdés nehézségétől függ (a nehézség pedig később 
 
 - pozitív szám esetén zöld (--green)
 - 0 esetén fehér (white)
-- nehatív szám esetén piros (--red)
+- negatív szám esetén piros (--red)
 
 Ugyan ez vonatkozik az átfordítás után a fejlécben a színre (ahol megjelenik a nehézség pontszám is).
 

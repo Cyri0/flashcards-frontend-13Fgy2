@@ -2,6 +2,11 @@
 
 :root{
   font-family: "Roboto";
+  --green: #66CB92;
+  --red: #FF9396;
+
+  --bg-color-1: #FC00FF;
+  --bg-color-2: #00DBDE;
 }
 
 *{
@@ -10,7 +15,12 @@
   box-sizing: border-box;
 }
 
-body{
+body, #root{
   width: 100%;
   min-height: 100vh;
+  background: linear-gradient(-45deg, var(--bg-color-2), var(--bg-color-1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
